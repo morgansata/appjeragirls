@@ -1,0 +1,123 @@
+/* Cor e fonte do fundo da aplicação */
+body {
+    background: #000000;
+    font-family: "Anton", cursive;
+  }
+  
+  /* Cor do Título Principal */
+  .heading {
+    color: #00f729a2;
+  }
+  
+  /* Cor e estilo do temporizador de contagem regressiva */
+  .timer {
+    color: #ffffff;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    width: 100%;
+  }
+  
+  /* Remove o estilo de preenchimento do botão iniciar */
+  .btn {
+    padding: 0;
+  }
+  
+  /* Cor e estilo do botão de reproduzir */
+  .fa-play,
+  .fa-redo-alt {
+    color: #ffffffd8;
+    border: 2px solid transparent;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+  
+  .fa-play:hover,
+  .fa-redo-alt:hover {
+    color: #00ff409f;
+    border: 2px solid #00fc3f9f;
+    transition: 0.3s ease;
+  }
+  
+  /* Estilo dinâmico */
+  /* Estilo da mensagem do HTML */
+  .show_message {
+    display: block;
+    padding: 1rem 0;
+    color: #000000;
+    background: #000000;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+  }
+  
+  .modeSelector__Button.active {
+    border: 1px solid var(--buttons);
+  }
+  
+  .timer {
+    position: absolute;
+    color: rgb(255, 255, 255)(--timer);
+    font-weight: 300;
+    font-size: 14vw;
+    /* margin: 20; */
+  }
+  
+  .timerControl {
+    display: flex;
+    flex-direction: row;
+    color: rgba(255, 255, 255, 0.973)
+    (--buttons);
+    font-size: 5vw;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  /* Definições do estilo responsivo */
+  
+  @media (max-width: 700px) {
+    .title {
+      top: 15px;
+      font-size: 20vw;
+    }
+  
+    .glass {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  
+    .modeSelector {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .modeSelector__Button {
+      margin: 5px;
+      font-size: 1rem;
+    }
+  
+    .timer {
+      color: rgb(251, 255, 251)
+      (--timer);
+      /* color: #7c2e20; */
+      font-weight: 500;
+      /* cover the entire page width : font-size: 10vw;*/
+      font-size: 20vw;
+    }
+  
+    .timerControl {
+      width: 80%;
+      font-size: 3rem;
+    }
+  }
